@@ -1,7 +1,7 @@
 // existing_user_processing.c
 #include <stdio.h>
 #include <string.h>
-#include "gslist_util.c"
+#include "gslist_util.h"
 
 #define IP_USER_FILE "ip_user_mapping.txt"
 

@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include "client_send_recv.c"
-#include "log_client_report.c"
+#include "client_send_recv.h"
+#include "log_client_report.h"
 
 #define SERVER_ADDR "127.0.0.1"
 #define PORT 8080

@@ -1,7 +1,9 @@
 // send_recv.c
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
+#include <unistd.h>
+#include <arpa/inet.h>   // For htons, inet_addr, sockaddr_in#include <sys/socket.h>  // For socket-related functions
 int send_message(int socket, const char *message) {
     return send(socket, message, strlen(message), 0);
 }

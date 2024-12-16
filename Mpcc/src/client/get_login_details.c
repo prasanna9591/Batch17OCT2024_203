@@ -10,4 +10,3 @@ void get_login_details(char *username, char *password) {
     fgets(password, 128, stdin);
     password[strcspn(password, "\n")] = '\0';
 }
-

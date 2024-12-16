@@ -1,7 +1,7 @@
 // new_user.c
 #include <stdio.h>
 #include <string.h>
-#include "new_user_processing.c"
+#include "new_user_processing.h"
 
 int register_new_user(const char *username, const char *password) {
     return process_new_user(username, password);

@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "gslist_util.h"
 
 int is_user_exist(const char *username) {
     FILE *file = fopen("registered_users.txt", "r");

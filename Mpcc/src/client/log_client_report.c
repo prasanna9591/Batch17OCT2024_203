@@ -20,4 +20,3 @@ void log_client_report(const char *level, const char *message, ...) {
 
     fclose(log_file);
 }
-

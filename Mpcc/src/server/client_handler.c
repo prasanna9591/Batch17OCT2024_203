@@ -1,13 +1,14 @@
-// client_handler.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "broadcast_handler.c"
-//#include "active_session.c"
+#include <sys/socket.h>
+#include <unistd.h>
+#include "broadcast_handler.h"
 #include "log_server_report.h"
 
 void *handle_client(void *arg) {
-	int socket =*(int*)arg;
+    int socket = *(int *)arg;
+    free(arg);
     char buffer[1024];
     int bytes_received;
 
@@ -22,6 +23,7 @@ void *handle_client(void *arg) {
     } else if (bytes_received == -1) {
         perror("Recv failed");
     }
-	return NULL;
+    close(socket);
+    return NULL;
 }
 

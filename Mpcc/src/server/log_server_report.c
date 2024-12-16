@@ -1,4 +1,3 @@
-// log_server_report.c
 #include <stdio.h>
 #include <stdarg.h>
 

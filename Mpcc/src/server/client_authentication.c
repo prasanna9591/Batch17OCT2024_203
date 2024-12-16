@@ -1,7 +1,5 @@
-// client_authentication.c
 #include <stdio.h>
 #include <string.h>
-#include "gslist_util.c"
 #include "common_crypto.h"
 
 #define REGISTER_FILE "registered_users.txt"
